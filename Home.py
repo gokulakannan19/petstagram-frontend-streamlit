@@ -1,7 +1,8 @@
+# Home.py
 import streamlit as st
 
-st.title("🐾 Petstagram")
-st.write("Welcome to the MVP version of Petstagram!")
+st.set_page_config(page_title="Petstagram", page_icon="🐾")
+st.title("🐾 Petstagram — MVP")
+st.write("Welcome! Use the sidebar to navigate or go to Login to start.")
 
-if st.button("Go to Login"):
-    st.switch_page("pages/1_Login.py")
+st.info("If you are new, go to Register from Login page.")

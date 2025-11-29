@@ -6,7 +6,7 @@ from config import BACKEND_URL
 def _url(path: str) -> str:
     if path.startswith("/"):
         path = path[1:]
-    return f"{BACKEND_URL}/{path}"
+    return f"{BACKEND_URL}/api/v1/{path}"
 
 
 def get(path: str, token: Optional[str] = None, params: dict|None = None):
