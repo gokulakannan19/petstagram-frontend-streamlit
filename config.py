@@ -4,5 +4,5 @@ import os
 
 load_dotenv()
 
-# Set BACKEND_URL in .env or replace directly below
-BACKEND_URL = os.getenv("BACKEND_URL", "https://your-backend.onrender.com")
+# Default to your provided backend URL (no trailing slash)
+BACKEND_URL = os.getenv("BACKEND_URL", "https://petstagram-backend-v1.onrender.com")
